@@ -1,1 +1,62 @@
 
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* Main content */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+}
+
+/* Temple image */
+main img {
+    display: block;
+    width: 350px;
+    height: auto;
+    margin: 0 auto 30px;
+    box-shadow: 0 0 30px gray;
+}
+
+/* Information sections */
+section {
+    background-color: #ddd;
+    padding: 1rem;
+    max-width: 325px;
+    margin: 20px auto;
+}
+
+/* Section headings */
+section h2 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
