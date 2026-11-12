@@ -12,16 +12,27 @@ main {
 
 aside {
     width: 300px;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
 }
 
 main img {
     width: 150px;
     height: auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
