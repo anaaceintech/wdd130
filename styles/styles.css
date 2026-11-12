@@ -10,6 +10,18 @@ main {
     margin: 0 auto;
 }
 
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+main p {
+    line-height: 1.6;
+    overflow: auto;
+}
+
 aside {
     width: 300px;
     position: relative;
@@ -18,38 +30,35 @@ aside {
 aside img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 aside h2 {
     position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: 25px;
+    left: 25px;
     color: white;
-    text-shadow: 1px 1px 3px #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    z-index: 1;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    float: right;
-    margin: 0 0 1rem 1rem;
-}
-
-p {
-    padding: 0;
+aside p {
+    line-height: 1.5;
 }
 
 footer {
     margin-top: 20px;
     border-top: 1px solid #333;
     text-align: center;
+    padding: 10px;
 }
 
 /* Class Selectors */
 
 .box {
     margin: 1rem;
-    border: 1px solid #333;
+    border: 2px solid #555555;
     padding: 1rem;
     background-color: #eeeeee;
     color: #333333;
