@@ -27,7 +27,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Header, Main and Footer */
+/* Main Layout */
 
 header, main, footer {
     width: 840px;
@@ -67,7 +67,7 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-/* General Element Styling */
+/* General Elements */
 
 nav, p, section, article {
     margin: 16px;
@@ -84,7 +84,7 @@ p {
     position: relative;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -107,7 +107,7 @@ p {
     left: 30px;
     right: 30px;
     background-color: rgba(255, 255, 255, 0.85);
-    color: #16425b;
+    color: var(--primary-color);
 }
 
 .hero article img {
@@ -149,4 +149,3 @@ footer {
     width: 35px;
     height: 35px;
 }
-
