@@ -1,1 +1,152 @@
 
+/* CSS Variables */
+
+:root {
+    --primary-color: #16425b;
+    --secondary-color: #81c3d7;
+    --accent1-color: #2f6690;
+    --accent2-color: #d9dcd6;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #ffffff;
+}
+
+/* Header, Main and Footer */
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Headings */
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* General Element Styling */
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #16425b;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 0 0 10px 15px;
+}
+
+/* Sections */
+
+section {
+    padding: 16px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--primary-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
+
