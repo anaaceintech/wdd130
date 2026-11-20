@@ -22,6 +22,8 @@ body {
     padding: 20px;
 }
 
+/* HEADER */
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -59,9 +61,13 @@ header nav a:hover {
     color: white;
 }
 
+/* MAIN CONTENT */
+
 main {
     width: 100%;
 }
+
+/* HERO SECTION */
 
 .hero {
     position: relative;
@@ -112,6 +118,8 @@ main {
     line-height: 1.6;
 }
 
+/* GENERAL SECTIONS */
+
 section {
     margin: 20px 5px;
     padding: 20px;
@@ -125,31 +133,42 @@ section h2 {
     font-family: var(--heading-font);
 }
 
-/* History section */
+/* HISTORY SECTION */
 
 .history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 20px;
+    padding: 30px;
 }
 
 .history h2 {
-    grid-column: 1 / 4;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
-.history p {
-    line-height: 1.5;
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-.history img {
+.history-content p {
+    line-height: 1.6;
+}
+
+.history-content img {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
-/* Adventures section */
+/* ADVENTURES SECTION */
+
+.adventures {
+    padding: 30px;
+}
+
+.adventures h2 {
+    margin-bottom: 25px;
+}
 
 .adventure-gallery {
     display: grid;
@@ -172,9 +191,10 @@ section h2 {
 .adventure-gallery figcaption {
     margin-top: 8px;
     font-size: 14px;
+    font-weight: bold;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     display: flex;
@@ -203,9 +223,13 @@ footer p {
     object-fit: contain;
 }
 
-/* Smaller screens */
+/* SMALLER SCREENS */
 
 @media screen and (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
     header {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -215,12 +239,13 @@ footer p {
         flex-wrap: wrap;
     }
 
-    .history {
+    .history-content {
         grid-template-columns: 1fr;
     }
 
-    .history h2 {
-        grid-column: 1;
+    .history-content img {
+        max-width: 300px;
+        justify-self: center;
     }
 
     .adventure-gallery {
